@@ -27,40 +27,57 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FORMULA B"
             android:layout_centerVertical="true"
-            android:textSize="32sp"
             android:fontFamily="@font/manrope_extrabold"
-            android:textColor="@color/white"
+            android:paddingBottom="56dp"
+            android:text="@string/formulab_text"
             android:textAlignment="center"
-            android:paddingBottom="24dp"/>
+            android:textColor="@color/white"
+            android:textSize="52sp" />
 
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/formulab_top_img"
         app:layout_constraintBottom_toTopOf="@id/formulab_bottom_img">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/about_us_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="O nama"
+            android:text="@string/onama_text"
+            app:icon="@drawable/office_32"
+            android:textSize="17sp"
+            app:iconPadding="16dp"
+            android:layout_marginVertical="3dp"
+            android:fontFamily="@font/manrope_bold"
             android:layout_gravity="center" />
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Testovi"
+            android:text="@string/testovi_text"
+            android:fontFamily="@font/manrope_bold"
+            app:icon="@drawable/book_32"
+            app:iconPadding="16dp"
+            android:textSize="17sp"
+            android:layout_marginVertical="3dp"
             android:layout_gravity="center"/>
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kontakt"
+            android:text="@string/kontakt_text"
+            app:icon="@drawable/phone_24"
+            app:iconPadding="16dp"
+            android:textSize="17sp"
+            android:layout_marginVertical="3dp"
+            android:fontFamily="@font/manrope_bold"
             android:layout_gravity="center"/>
 
     </LinearLayout>
@@ -77,8 +94,20 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/formulab_bottom"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/formulab_bottom" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/manrope_light"
+            android:text="@string/aggressive_click_contact_text1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:autoLink="phone|email"/>
 
     </RelativeLayout>
 
