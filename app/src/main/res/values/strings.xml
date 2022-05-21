@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">formulab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_us_text">Naša škola obučava kandidate za: AM i B kategorije. Obezbeđujemo Vam teorijsku i praktičnu obuku, stručnu literaturu, i sve potrebne informacije kako da najjednostavnije dođete do vozačke dozvole.</string>
+    <string name="about_header_text">O nama</string>
+
+    <string name="values_header_text">Naše vrednosti</string>
+    <string name="team_header_text">Naš tim</string>
+
+
+    <string name="team_text">- Marija Milošević | Predavač teorijske obuke\n\n
+    - Savka Ćulibrk | Administrativni rukovodilac\n\n
+    - Vladimir Gajinov | Instruktor vožnje\n\n
+    - Aleksandar Čalija | Instruktor vožnje\n\n
+    - Saša Durković | Instruktor vožnje\n\n
+    - Vladimir Bošković | Instruktor vožnje\n\n
+    - Robert Botlik | Instruktor vožnje\n\n
+    - Željko Lovre | Instruktor vožnje</string>
+
 </resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="0dp">
+
+    <RelativeLayout
+        android:id="@+id/formulab_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotationX="180"
+            android:rotationY="180"
+            android:scaleType="centerCrop"
+            android:src="@drawable/formulab_bottom" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORMULA B"
+            android:layout_centerVertical="true"
+            android:textSize="32sp"
+            android:fontFamily="@font/manrope_extrabold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:paddingBottom="24dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/formulab_top_img"
+        app:layout_constraintBottom_toTopOf="@id/formulab_bottom_img">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/about_us_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O nama"
+            android:layout_gravity="center" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testovi"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kontakt"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/formulab_bottom_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/formulab_bottom"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
