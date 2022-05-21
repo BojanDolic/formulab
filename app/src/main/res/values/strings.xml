@@ -17,5 +17,9 @@
     - Vladimir Bošković | Instruktor vožnje\n\n
     - Robert Botlik | Instruktor vožnje\n\n
     - Željko Lovre | Instruktor vožnje</string>
+    <string name="licencirani_instruktori_text">Licencirani instruktori</string>
+    <string name="dugogodisnje_iskustvo_text">Dugogodišnje iskustvo</string>
+    <string name="fleksibilan_raspored_text">Fleksibilan raspored</string>
+    <string name="komforna_vozila_text">Komforna vozila</string>
 
 </resources>

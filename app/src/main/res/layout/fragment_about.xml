@@ -142,7 +142,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
-                            android:text="Licencirani instruktori"
+                            android:text="@string/licencirani_instruktori_text"
                             app:icon="@drawable/certificate_32"
                             app:iconTint="@color/blue_shade"
                             app:iconSize="24dp" />
@@ -152,7 +152,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
-                            android:text="Dugogodišnje iskustvo"
+                            android:text="@string/dugogodisnje_iskustvo_text"
                             app:icon="@drawable/experience_32"
                             app:iconTint="@color/blue_shade"
                             app:iconSize="24dp" />
@@ -162,7 +162,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
-                            android:text="Fleksibilan raspored"
+                            android:text="@string/fleksibilan_raspored_text"
                             app:icon="@drawable/calendar_32"
                             app:iconTint="@color/blue_shade"
                             app:iconSize="24dp" />
@@ -172,7 +172,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
-                            android:text="Komforna vozila"
+                            android:text="@string/komforna_vozila_text"
                             app:icon="@drawable/car_32"
                             app:iconTint="@color/blue_shade"
                             app:iconSize="24dp" />
