@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.AboutFragment">
-
+    tools:context=".ui.fragments.ContactFragment">
 
     <RelativeLayout
         android:id="@+id/formulab_top_img"
@@ -21,18 +20,16 @@
             android:layout_height="wrap_content"
             android:rotationX="180"
             android:rotationY="180"
-            android:elevation="0dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/formulab_bottom"
-            android:backgroundTint="@android:color/transparent"/>
+            android:src="@drawable/formulab_bottom" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:fontFamily="@font/manrope_extrabold"
-            android:text="@string/formulab_text"
             android:paddingBottom="56dp"
+            android:text="@string/formulab_text"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="52sp" />
@@ -40,18 +37,19 @@
     </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/info_scroll"
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true"
-        android:paddingTop="200dp"
-        android:paddingBottom="9dp"
-        android:paddingHorizontal="9dp"
         android:clipToPadding="false"
         android:elevation="0dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true"
+        android:paddingHorizontal="9dp"
+        android:paddingTop="200dp"
+        android:paddingBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight="wrap_content_constrained"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,25 +73,72 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/about_header_btn"
-                        style="@style/ButtonHeaderStyle"
+                    <TextView
+                        android:id="@+id/info_header_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/about_header_text"
-                        android:textAlignment="viewStart"
-                        app:icon="@drawable/person_24"
-                        app:iconSize="34dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Načini da stupite u kontakt sa nama:"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@id/contact_info_parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
+                    <LinearLayout
+                        android:id="@+id/contact_info_parent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/manrope_regular"
-                        android:text="@string/about_us_text"
-                        android:textSize="16sp"
-                        app:layout_constraintTop_toBottomOf="@id/about_header_btn" />
+                        android:layout_marginTop="3dp"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/info_header_text">
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/ButtonListStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="@string/adresa_text"
+                            app:icon="@drawable/place_24"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/blue" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/email_btn"
+                            style="@style/ButtonListStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="@string/email_text"
+                            app:icon="@drawable/mail_24"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/red" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/phone_btn"
+                            style="@style/ButtonListStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="@string/telefon_text"
+                            app:icon="@drawable/phone_24"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/yellow" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/cellphone_btn"
+                            style="@style/ButtonListStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="@string/mobile_phone_text"
+                            app:icon="@drawable/cellphone_32"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/green" />
+
+
+                    </LinearLayout>
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -102,7 +147,7 @@
 
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/values_header"
+                android:id="@+id/socials_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -118,114 +163,66 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/values_header_btn"
-                        style="@style/ButtonHeaderStyle"
+                    <TextView
+                        android:id="@+id/socials_header_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/values_header_text"
-                        android:textAlignment="viewStart"
-                        app:icon="@drawable/values_32"
-                        app:iconSize="34dp"
-                        app:iconTint="@color/green"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Pratite nas na društvenim mrežama:"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@id/socials_info_parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+
                     <LinearLayout
+                        android:id="@+id/socials_info_parent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
                         android:orientation="vertical"
-                        app:layout_constraintTop_toBottomOf="@id/values_header_btn">
+                        app:layout_constraintTop_toBottomOf="@id/socials_header_text">
 
                         <com.google.android.material.button.MaterialButton
+                            android:id="@+id/facebook_btn"
                             style="@style/ButtonListStyle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
-                            android:text="@string/licencirani_instruktori_text"
-                            app:icon="@drawable/certificate_32"
-                            app:iconTint="@color/blue_shade"
-                            app:iconSize="24dp" />
+                            android:text="@string/facebook_text"
+                            app:icon="@drawable/facebook_32"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/blue_shade" />
 
                         <com.google.android.material.button.MaterialButton
+                            android:id="@+id/instagram_btn"
                             style="@style/ButtonListStyle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
-                            android:text="@string/dugogodisnje_iskustvo_text"
-                            app:icon="@drawable/experience_32"
-                            app:iconTint="@color/blue_shade"
-                            app:iconSize="24dp" />
+                            android:text="@string/instagram_text"
+                            app:icon="@drawable/instagram_32"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/blue_shade" />
 
                         <com.google.android.material.button.MaterialButton
+                            android:id="@+id/website_btn"
                             style="@style/ButtonListStyle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
-                            android:text="@string/fleksibilan_raspored_text"
-                            app:icon="@drawable/calendar_32"
-                            app:iconTint="@color/blue_shade"
-                            app:iconSize="24dp" />
-
-                        <com.google.android.material.button.MaterialButton
-                            style="@style/ButtonListStyle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/manrope_regular"
-                            android:text="@string/komforna_vozila_text"
-                            app:icon="@drawable/car_32"
-                            app:iconTint="@color/blue_shade"
-                            app:iconSize="24dp" />
+                            android:text="@string/website_text"
+                            app:icon="@drawable/www_32"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/blue_shade" />
 
 
                     </LinearLayout>
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/team_header"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="0dp"
-                app:contentPadding="6dp"
-                app:contentPaddingLeft="9dp"
-                app:contentPaddingRight="9dp"
-                app:strokeColor="@color/border_color"
-                app:strokeWidth="1dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/team_header_btn"
-                    style="@style/ButtonHeaderStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/team_header_text"
-                    android:textAlignment="viewStart"
-                    app:icon="@drawable/persons_32"
-                    app:iconSize="34dp"
-                    app:iconTint="@color/red"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/manrope_regular"
-                    android:text="@string/team_text"
-                    android:textSize="17sp"
-                    app:layout_constraintTop_toBottomOf="@id/team_header_btn" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
 

@@ -26,5 +26,12 @@
     <string name="kontakt_text">Kontakt</string>
     <string name="formulab_text"><i>FORMULA B</i></string>
     <string name="aggressive_click_contact_text1">Aplikacija podržana od Aggressive Click\ncontact@aggressiveclick.com | +387 66 631 930</string>
+    <string name="facebook_text">Facebook</string>
+    <string name="instagram_text">Instagram</string>
+    <string name="website_text">Web stranica</string>
+    <string name="adresa_text">Adresa:\nNjegoševa 15, 21000 Novi Sad</string>
+    <string name="email_text">Email:\nformulab@ymail.com</string>
+    <string name="telefon_text">Telefon:\n021/301-40-50</string>
+    <string name="mobile_phone_text">Mobilni telefon:\n064/280-52-42 | 063/859-93-23</string>
 
 </resources>
