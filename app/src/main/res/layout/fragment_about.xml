@@ -6,38 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.AboutFragment">
 
-
-    <RelativeLayout
-        android:id="@+id/formulab_top_img"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:elevation="10dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:rotationX="180"
-            android:rotationY="180"
-            android:elevation="0dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/formulab_bottom"
-            android:backgroundTint="@android:color/transparent"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/manrope_extrabold"
-            android:text="@string/formulab_text"
-            android:paddingBottom="56dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="52sp" />
-
-    </RelativeLayout>
+    <include layout="@layout/header_layout" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/info_scroll"

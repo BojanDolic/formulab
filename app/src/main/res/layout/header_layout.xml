@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/formulab_top_img"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:elevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rotationX="180"
+        android:rotationY="180"
+        android:scaleType="centerCrop"
+        android:src="@drawable/formulab_bottom" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="56dp">
+
+        <TextView
+            android:id="@+id/header_as_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_bold"
+            android:text="@string/autoskola_text"
+            android:textColor="#D50C0C"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="-24dp"
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_extrabold"
+            android:text="@string/formulab_text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="52sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

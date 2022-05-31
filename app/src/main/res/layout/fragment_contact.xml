@@ -23,16 +23,37 @@
             android:scaleType="centerCrop"
             android:src="@drawable/formulab_bottom" />
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:fontFamily="@font/manrope_extrabold"
-            android:paddingBottom="56dp"
-            android:text="@string/formulab_text"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="52sp" />
+            android:paddingBottom="56dp">
+
+            <TextView
+                android:id="@+id/header_as_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/autoskola_text"
+                android:textColor="#D50C0C"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="-24dp"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_extrabold"
+                android:text="@string/formulab_text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="52sp" />
+
+        </LinearLayout>
+
+
 
     </RelativeLayout>
 
@@ -105,12 +126,23 @@
                             app:iconTint="@color/blue" />
 
                         <com.google.android.material.button.MaterialButton
+                            style="@style/ButtonListStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="@string/adresa2_text"
+                            app:icon="@drawable/place_24"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/blue" />
+
+                        <com.google.android.material.button.MaterialButton
                             android:id="@+id/email_btn"
                             style="@style/ButtonListStyle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
                             android:text="@string/email_text"
+                            android:textAllCaps="false"
                             app:icon="@drawable/mail_24"
                             app:iconSize="24dp"
                             app:iconTint="@color/red" />
@@ -122,6 +154,16 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/manrope_regular"
                             android:text="@string/telefon_text"
+                            app:icon="@drawable/phone_24"
+                            app:iconSize="24dp"
+                            app:iconTint="@color/yellow" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/ButtonListStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/manrope_regular"
+                            android:text="@string/telefon2_text"
                             app:icon="@drawable/phone_24"
                             app:iconSize="24dp"
                             app:iconTint="@color/yellow" />
