@@ -33,6 +33,10 @@ class MainFragment : Fragment() {
             findNavController().navigate(MainFragmentDirections.actionMainFragmentToContactFragment())
         }
 
+        binding.testoviBtn.setOnClickListener {
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToSelectTestFragment())
+        }
+
     }
 
     override fun onDestroyView() {

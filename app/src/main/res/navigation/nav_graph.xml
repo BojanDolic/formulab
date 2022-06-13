@@ -19,6 +19,12 @@
             app:destination="@id/contactFragment"
             app:launchSingleTop="true"
             app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_selectTestFragment"
+            app:destination="@id/selectTestFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -30,4 +36,9 @@
         android:name="com.aggressiveclick.formulab.ui.fragments.ContactFragment"
         android:label="fragment_contact"
         tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/selectTestFragment"
+        android:name="com.aggressiveclick.formulab.ui.fragments.SelectTestFragment"
+        android:label="fragment_select_test"
+        tools:layout="@layout/fragment_select_test" />
 </navigation>
